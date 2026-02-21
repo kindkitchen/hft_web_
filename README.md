@@ -1,15 +1,19 @@
-# About
+# Vite + Deno + Vue 3 + TypeScript
 
-## Some notes about **ci/cd**
+## Running
 
-- This is git submodules root and it is **public**
-- However it's submodules may be private
-- It also produce flatten _(no submodules)_ aggregated self-version and push it into private [https://github.com/kindkitchen/hft\_.git](dist-repository) _(it is used for rest deployment related tasks)_
+You need to have Deno v2.0.0 or later installed to run this repo.
 
-### Cli utils/helpers powered by `just`
+Start a dev server:
 
-> Read comments in `.just/*` files
+```
+$ deno task dev
+```
 
-## `hft_api`
+## Deploy
 
-> TODO
+Build production assets:
+
+```
+$ deno task build
+```

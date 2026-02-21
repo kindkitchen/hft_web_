@@ -1,9 +1,0 @@
-services:
-  hft_order_book_data_source:
-    container_name: hft_order_book_data_source
-    ports:
-      - "4000:4000"
-    build:
-      context: ./hft_order_book_data_source
-      dockerfile: Dockerfile
-    restart: unless-stopped
